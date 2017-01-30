@@ -1,0 +1,4 @@
+<form id="searchbar" name="searchBar" ng-controller="SearchCtrl">
+    <input type="text"  name="searchBox" ng-model="searchTerm" ng-focus="checkInput()" ng-change="checkInput()" ng-blur="checkInput()" novalidate required />
+    <input type="button" name="go" value="Go" disabled="searchDisabled" ng-click="doSearch()" />
+</form>

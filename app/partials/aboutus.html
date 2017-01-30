@@ -1,0 +1,32 @@
+<img src="{{headerImage}}" width="980" height="219" />
+<h1>{{title}}</h1>
+
+<p>
+    Reliable and affordable, Our company is fast becoming one of the leading manufacturers of heating equipment in the UK supplying boilers, radiators and towel warmers nationwide.
+</p>
+<p>
+    During more than 50 years of manufacturing experience, we've established an enviable reputation for producing cost effective, high efficiency equipment that's easy to install and maintain.
+</p>
+<p>
+    But we also understand that creating a great product is only half the story and take pride in providing unflagging aftersales support.  Our reassuring, "can-do" attitude ensures that no-one is more committed to lasting customer satisfaction.
+</p>
+
+<div ng-controller="AccordionCtrl">
+    <accordion close-others="oneAtATime">
+        <accordion-group heading="Accreditation" is-open="true">
+
+            <p>All our products are fitted with specially selected components and have CE and WRAS certification. We are a member of Benchmark, the industry code of practice for the installation and commissioning of domestic hot water central heating systems.  We obtain British Gas Service listings at the earliest opportunity, ensuring the highest levels of quality, reliability and service.</p>
+        </accordion-group>
+        <accordion-group heading="Background">
+            <p>We are the division of Generic Ltd, itself a subsidiary of GenCorp of the top 200 companies in the world.  Our head office and main distribution centre is based in Bradford and runs alongside a parallel operation in Germany and a sales office in France.</p>
+
+        </accordion-group>
+        <accordion-group heading="The Environment">
+            <p>Our continuing commitment means that over 80% of our boiler packaging materials can be recycled.</p>
+        </accordion-group>
+    </accordion>
+</div>
+
+
+
+<div data-ng-include src="'partials/footer.html'"></div>

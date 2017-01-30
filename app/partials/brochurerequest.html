@@ -1,0 +1,39 @@
+<img src="{{headerImage}}" width="980" height="219"/>
+<h1>{{title}}</h1>
+
+<p>To receive the latest brochure, simply fill in the details below.</p>
+
+<div>
+    <form action="#/brochure-request/" method="post">
+
+        <p>First Name<br>
+            <span ><input type="text" name="FirstName" value="" size="40" ></span>
+        </p>
+        <p>Surname<br>
+            <span><input type="text" name="Surname" value="" size="40" ></span>
+        </p>
+        <p>Company Name<br>
+            <span><input type="text" name="CompanyName" value="" size="40" ></span>
+        </p>
+        <p>Telephone<br>
+            <span><input type="tel" name="telephone" value="" size="40"></span>
+        </p>
+        <p>Address<br>
+            <span><input type="text" name="Address" value="" size="40" ></span>
+        </p>
+        <p>Town<br>
+            <span><input type="text" name="Town" value="" size="40" ></span>
+        </p>
+        <p>City<br>
+            <span><input type="text" name="City" value="" size="40" ></span>
+        </p>
+        <p>Postcode<br>
+            <span><input type="text" name="Postcode" value="" size="40" ></span>
+        </p>
+        <p>Your Email (required)<br>
+            <span ><input type="email" name="your-email" value="" size="40"></span> </p>
+        <p><input type="submit" value="Send" ></p>
+    </form>
+</div>
+
+<div data-ng-include src="'partials/footer.html'"></div>

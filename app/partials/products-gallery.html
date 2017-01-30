@@ -1,0 +1,31 @@
+<div class="gallery-content">
+<div class="center">
+<div ng-controller="CarouselCtrl" style="width: 300px;">
+
+    <div>
+        <carousel interval="myInterval">
+            <slide ng-repeat="slide in slides" active="slide.active">
+                <img ng-src="{{slide.image}}?{{$index}}" style="margin:auto;" />
+                <div class="carousel-caption">
+                    <h4>Slide {{$index}}</h4>
+                    <p>{{slide.text}}</p>
+                </div>
+            </slide>
+        </carousel>
+
+
+    <script id="template/carousel/carousel.html" type="text/ng-template">
+        <div ng-mouseenter="pause()" ng-mouseleave="play()" class="carousel">
+            <ol class="carousel-indicators" ng-show="slides().length > 1">
+                <li ng-repeat="slide in slides()" ng-class="{active: isActive(slide)}" ng-click="select(slide)"></li>
+            </ol>
+            <div class="carousel-inner" ng-transclude set-ng-animate="$parent.animate"></div>
+            <a ng-click="prev()" class="carousel-control left" ng-show="slides().length > 1">&lsaquo;</a>
+            <a ng-click="next()" class="carousel-control right" ng-show="slides().length > 1">&rsaquo;</a>
+        </div>
+    </script>
+    </div>
+</div>
+
+</div>
+</div>

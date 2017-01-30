@@ -1,0 +1,14 @@
+<nav>
+    <ul id="menu" ng-controller="MenuController">
+        <li ng-class="{ active: isActive('/')}"><a href="/">Home</a>
+        </li><li ng-class="{ active: isActive('/aboutus')}"><a href="/aboutus">About Us</a>
+        </li><li ng-class="{ active: isActive('/products') }"><a href="/products">Products</a>
+            <ul>
+                <li><a href="/boilers">Boilers</a></li>
+                <li><a href="/water-heaters">Water Heaters</a></li>
+            </ul>
+        </li><li ng-class="{ active: isActive('/brochure')}"><a href="/brochure">Brochure Request</a>
+        </li><li ng-class="{ active: isActive('/downloads')}"><a href="/downloads">Downloads</a>
+        </li><li ng-class="{ active: isActive('/stockist')}"><a href="/stockist">Become a Stockist</a></li>
+    </ul>
+</nav>
